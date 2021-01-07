@@ -4,13 +4,13 @@
 
         <div v-if="isReady" class="mt-5">
             <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12 mt-3">
-                <h1 class="font-serif">Canvas</h1>
-                <p class="lead text-secondary">A Laravel Publishing Platform</p>
+                <h1 class="font-serif">Artikel</h1>
+                <p class="lead text-secondary">Cari informasi musikmu disini!</p>
 
                 <main role="main" class="mt-5">
                     <div>
                         <h4 class="my-4 border-bottom mt-5 pb-2">
-                            <span class="border-bottom border-dark pb-2">Posts</span>
+                            <span class="border-bottom border-dark pb-2">Post</span>
                         </h4>
 
                         <div :key="`${index}-${post.id}`" v-for="(post, index) in posts">

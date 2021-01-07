@@ -2,15 +2,15 @@
     <div class="border-bottom">
         <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12">
             <nav class="navbar d-flex px-0 py-1">
-                <router-link :to="{ name: 'posts' }" class="navbar-brand hover font-weight-bolder font-serif mr-3">
-                    Canvas
+                <router-link :to="{ name: 'posts' }" class="navbar-brand hover font-weight-bolder mr-3">
+                    UKM Musik ITS
                 </router-link>
                 <div class="mr-auto border-left pl-1">
                     <router-link :to="{ name: 'tags' }" class="btn btn-link py-0 text-decoration-none">
-                        Tags
+                        Kategori
                     </router-link>
                     <router-link :to="{ name: 'topics' }" class="btn btn-link py-0 text-decoration-none">
-                        Topics
+                        Topik
                     </router-link>
                 </div>
 
@@ -40,19 +40,19 @@
                             {{ user.email }}
                         </h6>
                         <div class="dropdown-divider" />
-                        <a :href="`/${canvasPath}/users/${user.id}/edit`" class="dropdown-item">Your profile</a>
-                        <a :href="`/${canvasPath}/posts`" class="dropdown-item">Posts</a>
+                        <a :href="`/${canvasPath}/users/${user.id}/edit`" class="dropdown-item">Profil Anda</a>
+                        <a :href="`/${canvasPath}/posts`" class="dropdown-item">Tulisan</a>
                         <a v-if="isAdmin" :href="`/${canvasPath}/users`" class="dropdown-item">Users</a>
-                        <a v-if="isAdmin" :href="`/${canvasPath}/tags`" class="dropdown-item">Tags</a>
-                        <a v-if="isAdmin" :href="`/${canvasPath}/topics`" class="dropdown-item">Topics</a>
-                        <a :href="`/${canvasPath}/stats`" class="dropdown-item">Stats</a>
+                        <a v-if="isAdmin" :href="`/${canvasPath}/tags`" class="dropdown-item">Kategori</a>
+                        <a v-if="isAdmin" :href="`/${canvasPath}/topics`" class="dropdown-item">Topik</a>
+                        <a :href="`/${canvasPath}/stats`" class="dropdown-item">Statistik</a>
                         <div class="dropdown-divider" />
-                        <a :href="`/${canvasPath}/settings`" class="dropdown-item">Settings</a>
+                        <a :href="`/${canvasPath}/settings`" class="dropdown-item">Pengaturan</a>
                         <a href="" class="dropdown-item" @click.prevent="logout"> Sign out </a>
                     </div>
                 </div>
 
-                <a v-if="!user" :href="`/${canvasPath}/login`" class="btn btn-link text-decoration-none">Sign in</a>
+                <!-- <a v-if="!user" :href="`/${canvasPath}/login`" class="btn btn-link text-decoration-none">Sign in</a> -->
             </nav>
         </div>
     </div>

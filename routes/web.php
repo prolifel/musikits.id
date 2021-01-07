@@ -32,6 +32,7 @@ Route::get('/admin/dashboard/register-admin', [AdminController::class, 'showRegi
 Route::post('/admin/dashboard/register-admin-process', [AdminController::class, 'Register'])->name('admin/register/process')->middleware('AdminCheck');
 Route::get('/admin/dashboard/list-admin', [AdminController::class, 'listAdmin'])->name('admin/list')->middleware('AdminCheck');
 Route::get('/admin/dashboard/artikel', [AdminController::class, 'listAdmin'])->name('admin/list')->middleware('AdminCheck');
+Route::get('/admin/kontol', [AdminController::class, 'kontol'])->name('admin/kontol')->middleware('AdminCheck');
 
 Route::prefix('canvas-ui')->group(function () {
     Route::prefix('api')->group(function () {

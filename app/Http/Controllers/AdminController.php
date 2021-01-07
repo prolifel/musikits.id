@@ -116,4 +116,13 @@ class AdminController extends Controller
 
 
     }
+
+    public function kontol(Request $request)
+    {
+        $admins = Admin::paginate(10);
+        return view('canvas::auth.login', [
+            'nama' => $request->session()->get('nama'),
+            'admins'  => $admins
+        ]);
+    }
 }

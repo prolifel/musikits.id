@@ -55,7 +55,7 @@
                 </a>
               </li>
               <li class="nav-item ml-4">
-                <a href="{{route('admin/list')}}" class="nav-link">
+                <a href="{{route('admin/kontol')}}" class="nav-link">
                   @if (request()->path() == 'admin/dashboard/artikel')
                     <i class="fas fa-circle nav-icon text-info"></i>
                   @else
